@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACT 2 - Witness Statements | Vietnam Police Database</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <img src="vietnam-flag.svg" alt="Vietnam Flag" class="flag-icon">
+                <div class="header-text">
+                    <h1>ACT 2 - WITNESS STATEMENTS</h1>
+                    <h2>Case #2025-0714-001</h2>
+                </div>
+                <img src="vietnam-flag.svg" alt="Vietnam Flag" class="flag-icon">
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="terminal-title">CASE FILE VIEWER - ACT 2</span>
+                    <div class="terminal-controls">
+                        <a href="index.html" class="back-btn">← BACK TO MAIN</a>
+                    </div>
+                </div>
+                
+                <div class="terminal-content">
+                    <div class="report-section">
+                        <h3>WITNESS TESTIMONIES</h3>
+                        <div class="report-text">
+                            <div class="witness-statement">
+                                <p><strong>WITNESS 1 - Shop Owner (Mr. Le Van B):</strong></p>
+                                <p>"SOYTIET came in around 2:30 PM. He was very interested in our rare card section. 
+                                He kept asking about the Charizard card and wanted to know about our security system. 
+                                I thought it was strange because he seemed to know a lot about the card already."</p>
+                            </div>
+                            <br>
+                            <div class="witness-statement">
+                                <p><strong>WITNESS 2 - Customer (Ms. Tran Thi C):</strong></p>
+                                <p>"I saw a man acting suspicious near the display case. He was wearing a baseball cap 
+                                and kept looking around nervously. When I walked by, he quickly moved away from the 
+                                Pokémon section."</p>
+                            </div>
+                            <br>
+                            <div class="witness-statement">
+                                <p><strong>WITNESS 3 - Security Guard (Mr. Pham Van D):</strong></p>
+                                <p>"The suspect asked me detailed questions about our patrol schedule and camera angles. 
+                                He claimed to be a researcher studying shop security systems. Very suspicious behavior."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="puzzle-section">
+                        <h3>SECURITY CODE PUZZLE</h3>
+                        <div class="puzzle-container">
+                            <p class="puzzle-instruction">The security system recorded these numbers when SOYTIET was near the display:</p>
+                            <div class="cipher-text">
+                                "Sequence: 16 9 11 1 3 8 21"
+                            </div>
+                            <p class="hint">Hint: Convert numbers to letters (A=1, B=2, C=3...)</p>
+                            
+                            <div class="input-section">
+                                <input type="text" id="act2-answer" placeholder="Enter the decoded word" class="puzzle-input">
+                                <button onclick="checkAct2Answer()" class="submit-btn">SUBMIT</button>
+                            </div>
+                            <div id="act2-result" class="result-message"></div>
+                        </div>
+                    </div>
+
+                    <div class="navigation">
+                        <a href="act1.html" class="nav-btn">← BACK TO ACT 1</a>
+                        <a href="act3.html" class="nav-btn disabled" id="act3-link">PROCEED TO ACT 3 →</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

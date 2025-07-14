@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACT 4 - Final Verdict | Vietnam Police Database</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <img src="vietnam-flag.svg" alt="Vietnam Flag" class="flag-icon">
+                <div class="header-text">
+                    <h1>ACT 4 - FINAL VERDICT</h1>
+                    <h2>Case #2025-0714-001</h2>
+                </div>
+                <img src="vietnam-flag.svg" alt="Vietnam Flag" class="flag-icon">
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="terminal-title">CASE FILE VIEWER - ACT 4</span>
+                    <div class="terminal-controls">
+                        <a href="index.html" class="back-btn">← BACK TO MAIN</a>
+                    </div>
+                </div>
+                
+                <div class="terminal-content">
+                    <div class="evidence-section">
+                        <h3>SUSPECT TESTIMONY</h3>
+                        <div class="video-container">
+                            <video controls width="100%" style="max-width: 600px; border: 2px solid #00ff00; border-radius: 8px;">
+                                <source src="soytiet-testimony.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+
+                    <div class="report-section">
+                        <h3>CASE CONCLUSION</h3>
+                        <div class="report-text">
+                            <p><strong>Final Report by:</strong> Chief Detective Nguyen Van F</p>
+                            <p><strong>Case Status:</strong> CLOSED</p>
+                            <p><strong>Verdict:</strong> GUILTY</p>
+                            <br>
+                            <p><strong>SUMMARY:</strong></p>
+                            <p>After thorough investigation, suspect SOYTIET has been found guilty of theft 
+                            of rare Pokémon card. The evidence collected throughout Acts 1-3 has provided 
+                            overwhelming proof of the suspect's involvement in the crime.</p>
+                            <br>
+                            <p><strong>EVIDENCE SUMMARY:</strong></p>
+                            <ul>
+                                <li>Witness testimonies confirming suspicious behavior</li>
+                                <li>Fingerprint and DNA evidence at the crime scene</li>
+                                <li>Digital forensics revealing premeditated planning</li>
+                                <li>Suspect's own confession in testimony video</li>
+                            </ul>
+                            <br>
+                            <p><strong>SENTENCING:</strong> Suspect has agreed to return the stolen card 
+                            and make full restitution to the shop owner.</p>
+                        </div>
+                    </div>
+
+                    <div class="puzzle-section">
+                        <h3>FINAL AUTHORIZATION</h3>
+                        <div class="puzzle-container">
+                            <p class="puzzle-instruction">Enter the master code to close the case and unlock the gift:</p>
+                            <div class="cipher-text">
+                                "JUSTICE + POKEMON + SOLVED"
+                            </div>
+                            <p class="hint">Hint: Combine all three words (no spaces, all uppercase)</p>
+                            
+                            <div class="input-section">
+                                <input type="text" id="act4-answer" placeholder="Enter master code" class="puzzle-input">
+                                <button onclick="checkAct4Answer()" class="submit-btn">SUBMIT</button>
+                            </div>
+                            <div id="act4-result" class="result-message"></div>
+                        </div>
+                    </div>
+
+                    <div class="final-message" id="final-message" style="display: none;">
+                        <div class="success-box">
+                            <h2>🎉 CASE CLOSED SUCCESSFULLY! 🎉</h2>
+                            <p>Congratulations, Detective! You have successfully solved the case of the stolen Pokémon card.</p>
+                            <br>
+                            <p><strong>SPECIAL AUTHORIZATION GRANTED:</strong></p>
+                            <p>You are now authorized to open the physical gift box!</p>
+                            <br>
+                            <p>The Vietnamese Police Department thanks you for your excellent detective work.</p>
+                            <br>
+                            <div class="gift-authorization">
+                                <p>🎁 GIFT BOX UNLOCK CODE: DETECTIVE2025</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="navigation">
+                        <a href="act3.html" class="nav-btn">← BACK TO ACT 3</a>
+                        <a href="index.html" class="nav-btn">RETURN TO MAIN DATABASE</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

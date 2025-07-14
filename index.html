@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM - Case Database</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <img src="vietnam-flag.svg" alt="Vietnam Flag" class="flag-icon">
+                <div class="header-text">
+                    <h1>CỘNG HÒA XÃ HỘI CHỦ NGHĨA VIỆT NAM</h1>
+                    <h2>Độc lập - Tự do - Hạnh phúc</h2>
+                </div>
+                <img src="vietnam-flag.svg" alt="Vietnam Flag" class="flag-icon">
+            </div>
+            <div class="department-title">
+                <h3>BỘ CÔNG AN - POLICE INVESTIGATION DATABASE</h3>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="terminal-title">CASE FILE SYSTEM v2.1.4</span>
+                    <div class="terminal-controls">
+                        <span class="control minimize">_</span>
+                        <span class="control maximize">□</span>
+                        <span class="control close">×</span>
+                    </div>
+                </div>
+                
+                <div class="terminal-content">
+                    <div class="case-header">
+                        <h2>CASE #2025-0714-001</h2>
+                        <div class="case-info">
+                            <p><span class="label">SUSPECT:</span> SOYTIET</p>
+                            <p><span class="label">CHARGE:</span> THEFT OF RARE POKÉMON CARD</p>
+                            <p><span class="label">STATUS:</span> UNDER INVESTIGATION</p>
+                            <p><span class="label">CLASSIFICATION:</span> CONFIDENTIAL</p>
+                        </div>
+                    </div>
+
+                    <div class="evidence-grid">
+                        <div class="evidence-folder" onclick="navigateToAct('act1.html')" id="act1-folder">
+                            <div class="folder-icon">📁</div>
+                            <div class="folder-label">ACT 1</div>
+                            <div class="folder-subtitle">INITIAL REPORT</div>
+                            <div class="security-level">SECURITY LEVEL: LOW</div>
+                        </div>
+
+                        <div class="evidence-folder locked" onclick="navigateToAct('act2.html')" id="act2-folder">
+                            <div class="folder-icon">📁</div>
+                            <div class="folder-label">ACT 2</div>
+                            <div class="folder-subtitle">WITNESS STATEMENTS</div>
+                            <div class="security-level">SECURITY LEVEL: MEDIUM</div>
+                            <div class="lock-message">COMPLETE ACT 1 TO UNLOCK</div>
+                        </div>
+
+                        <div class="evidence-folder locked" onclick="navigateToAct('act3.html')" id="act3-folder">
+                            <div class="folder-icon">📁</div>
+                            <div class="folder-label">ACT 3</div>
+                            <div class="folder-subtitle">FORENSIC EVIDENCE</div>
+                            <div class="security-level">SECURITY LEVEL: HIGH</div>
+                            <div class="lock-message">COMPLETE ACT 2 TO UNLOCK</div>
+                        </div>
+
+                        <div class="evidence-folder locked" onclick="navigateToAct('act4.html')" id="act4-folder">
+                            <div class="folder-icon">📁</div>
+                            <div class="folder-label">ACT 4</div>
+                            <div class="folder-subtitle">FINAL VERDICT</div>
+                            <div class="security-level">SECURITY LEVEL: CLASSIFIED</div>
+                            <div class="lock-message">COMPLETE ACT 3 TO UNLOCK</div>
+                        </div>
+                    </div>
+
+                    <div class="terminal-footer">
+                        <p>└─ Select case file to proceed with investigation</p>
+                        <div class="status-bar">
+                            <span class="status-item">Connected to VN-POLICE-DB</span>
+                            <span class="status-item">User: DETECTIVE_001</span>
+                            <span class="status-item">Time: <span id="current-time"></span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

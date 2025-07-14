@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACT 3 - Forensic Evidence | Vietnam Police Database</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <img src="vietnam-flag.svg" alt="Vietnam Flag" class="flag-icon">
+                <div class="header-text">
+                    <h1>ACT 3 - FORENSIC EVIDENCE</h1>
+                    <h2>Case #2025-0714-001</h2>
+                </div>
+                <img src="vietnam-flag.svg" alt="Vietnam Flag" class="flag-icon">
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="terminal-title">CASE FILE VIEWER - ACT 3</span>
+                    <div class="terminal-controls">
+                        <a href="index.html" class="back-btn">← BACK TO MAIN</a>
+                    </div>
+                </div>
+                
+                <div class="terminal-content">
+                    <div class="report-section">
+                        <h3>LABORATORY REPORT</h3>
+                        <div class="report-text">
+                            <p><strong>Forensic Analyst:</strong> Dr. Vo Thi E</p>
+                            <p><strong>Date of Analysis:</strong> July 14, 2025</p>
+                            <p><strong>Evidence ID:</strong> VN-2025-0714-001-A</p>
+                            <br>
+                            <p><strong>FINGERPRINT ANALYSIS:</strong></p>
+                            <p>Partial fingerprints recovered from the display case glass show a match with 
+                            suspect SOYTIET. The prints were found on the lower right corner of the display, 
+                            consistent with someone attempting to examine the lock mechanism.</p>
+                            <br>
+                            <p><strong>DNA EVIDENCE:</strong></p>
+                            <p>Hair follicle recovered from the scene matches suspect's DNA profile. 
+                            The evidence suggests the suspect spent considerable time near the display case.</p>
+                            <br>
+                            <p><strong>DIGITAL FORENSICS:</strong></p>
+                            <p>CCTV footage analysis reveals suspect's movements followed a specific pattern, 
+                            suggesting premeditation. The suspect appeared to be timing security patrol intervals.</p>
+                            <br>
+                            <p><strong>CONCLUSION:</strong> Evidence strongly suggests SOYTIET was planning the theft.</p>
+                        </div>
+                    </div>
+
+                    <div class="puzzle-section">
+                        <h3>CRACK THE PASSWORD</h3>
+                        <div class="puzzle-container">
+                            <p class="puzzle-instruction">SOYTIET's phone was recovered. Crack the password to access his messages:</p>
+                            <div class="cipher-text">
+                                "Password contains: First Pokémon + Year of birth (1990) + Last digit of case number"
+                            </div>
+                            <p class="hint">Hint: First Pokémon is Bulbasaur, Case number is 2025-0714-001</p>
+                            
+                            <div class="input-section">
+                                <input type="text" id="act3-answer" placeholder="Enter password" class="puzzle-input">
+                                <button onclick="checkAct3Answer()" class="submit-btn">SUBMIT</button>
+                            </div>
+                            <div id="act3-result" class="result-message"></div>
+                        </div>
+                    </div>
+
+                    <div class="navigation">
+                        <a href="act2.html" class="nav-btn">← BACK TO ACT 2</a>
+                        <a href="act4.html" class="nav-btn disabled" id="act4-link">PROCEED TO ACT 4 →</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

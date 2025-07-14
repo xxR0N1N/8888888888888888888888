@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACT 1 - Initial Report | Vietnam Police Database</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="header-content">
+                <img src="vietnam-flag.svg" alt="Vietnam Flag" class="flag-icon">
+                <div class="header-text">
+                    <h1>ACT 1 - INITIAL REPORT</h1>
+                    <h2>Case #2025-0714-001</h2>
+                </div>
+                <img src="vietnam-flag.svg" alt="Vietnam Flag" class="flag-icon">
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="terminal-title">CASE FILE VIEWER - ACT 1</span>
+                    <div class="terminal-controls">
+                        <a href="index.html" class="back-btn">← BACK TO MAIN</a>
+                    </div>
+                </div>
+                
+                <div class="terminal-content">
+                    <div class="report-section">
+                        <h3>INCIDENT REPORT</h3>
+                        <div class="report-text">
+                            <p><strong>Date:</strong> July 14, 2025</p>
+                            <p><strong>Reporting Officer:</strong> Detective Nguyen Van A</p>
+                            <p><strong>Location:</strong> Ho Chi Minh City Card Shop</p>
+                            <br>
+                            <p>Subject SOYTIET was observed entering the Pokémon card shop at approximately 14:30 hours. 
+                            According to witness testimony, the suspect appeared nervous and was observed handling multiple 
+                            rare card displays. The missing card is a holographic Charizard valued at $10,000 USD.</p>
+                            <br>
+                            <p>Shop owner reported that SOYTIET was asking specific questions about the card's security 
+                            measures and seemed unusually interested in the shop's surveillance system blind spots.</p>
+                            <br>
+                            <p><strong>EVIDENCE SEIZED:</strong> Security footage, fingerprints on display case</p>
+                        </div>
+                    </div>
+
+                    <div class="puzzle-section">
+                        <h3>DECODE THE WITNESS STATEMENT</h3>
+                        <div class="puzzle-container">
+                            <p class="puzzle-instruction">The witness left an encrypted message. Decode it to proceed:</p>
+                            <div class="cipher-text">
+                                "VRBLWHW LV JXLOW BRI FDUG WKHIW"
+                            </div>
+                            <p class="hint">Hint: Caesar cipher with shift of 3</p>
+                            
+                            <div class="input-section">
+                                <input type="text" id="act1-answer" placeholder="Enter decoded message" class="puzzle-input">
+                                <button onclick="checkAct1Answer()" class="submit-btn">SUBMIT</button>
+                            </div>
+                            <div id="act1-result" class="result-message"></div>
+                        </div>
+                    </div>
+
+                    <div class="navigation">
+                        <a href="index.html" class="nav-btn">← BACK TO CASE FILES</a>
+                        <a href="act2.html" class="nav-btn disabled" id="act2-link">PROCEED TO ACT 2 →</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
