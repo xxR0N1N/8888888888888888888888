@@ -78,7 +78,7 @@ function checkAct1Answer() {
     if (!input || !result) return;
     
     const answer = input.value.toUpperCase().trim();
-    const correctAnswer = "SOYTIET IS GUILTY OF CARD THEFT";
+    const correctAnswer = "INNOCENTPERSON";
     
     if (answer === correctAnswer) {
         result.textContent = "✓ CORRECT! Access granted to ACT 2.";
@@ -108,7 +108,7 @@ function checkAct2Answer() {
     if (!input || !result) return;
     
     const answer = input.value.toUpperCase().trim();
-    const correctAnswer = "PIKACHU";
+    const correctAnswer = "SCALPERS";
     
     if (answer === correctAnswer) {
         result.textContent = "✓ CORRECT! Security code accepted. Access granted to ACT 3.";
