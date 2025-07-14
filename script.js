@@ -189,7 +189,7 @@ function checkAct4Answer() {
             document.body.style.animation = 'celebration 2s ease-in-out';
         }, 1000);
     } else {
-        result.textContent = "✗ INCORRECT. Combine all three words: JUSTICE + POKEMON + SOLVED";
+        result.textContent = "✗ INCORRECT. Enter The Master Code";
         result.className = "result-message error";
     }
 }
