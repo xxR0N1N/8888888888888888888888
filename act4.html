@@ -37,13 +37,13 @@
                             <p><strong>Verdict:</strong> GUILTY</p>
                             <br>
                             <p><strong>SUMMARY:</strong></p>
-                            <p>Yes, I, Soytiet, reclaimed the sacred card from the greasy hands of the Republic of Scammers. I knew they’d come. I could smell the resealed packs and HP battles from a mile away.</p>
+                            <p>Yes, I, Soytiet, reclaimed the sacred card from the greasy hands of the Republic of Scammers. I knew they'd come. I could smell the resealed packs and HP battles from a mile away.</p>
                             <br>
                             <p>Did the police try to catch me? Absolutely. Did they succeed? Never. I moved like a Vietnamese spider man. Like the wind that rustles my rice paddy fields in the moonlight.</p>
                             <br>
                             <p>The leader of the Republic of Scalpers? Arrested. He got caught halfway through resealing base set packs. A tragedy. A triumph. An ordinary Tuesday for them.</p>
                             <br>
-                            <p>But that’s not why you’re here.</p>
+                            <p>But that's not why you're here.</p>
                             <br>
                             <p>No, you came for something greater. A message. A legacy. A piece of art so profound, so emotionally devastating, it makes the Mona Lisa look like a thumbnail.</p>
                             <br>
@@ -51,7 +51,7 @@
                             <br>
                             <p>I have poured my heart, soul, and possibly all of my Vietnamese aura into this performance. It is my magnum opus. My emotional Da Vinci. A masterwork that transcends language, reason, and possibly copyright law.</p>
                             <br>
-                            <p>And the card that I stole, I have sent it over to you in the black box that you now hold. It’s not just any card. It’s a symbol of friendship, memories, and a little bit of rebellion against the scammers. Because some things are too special to let slip away.</p>
+                            <p>And the card that I stole, I have sent it over to you in the black box that you now hold. It's not just any card. It's a symbol of friendship, memories, and a little bit of rebellion against the scammers. Because some things are too special to let slip away.</p>
                             <br>
                             <p>Oh, and before you watch, happy birthday! 🎉 This one for you.</p>
                             <br>
@@ -94,9 +94,9 @@
                         <div class="puzzle-container">
                             <p class="puzzle-instruction">Enter the master code to close the case and unlock the gift:</p>
                             <div class="cipher-text">
-                                "JUSTICE FOR COLLECTORS"
+                                "JUSTICE + POKEMON + SOLVED"
                             </div>
-                            <p class="hint">Hint: JUSTICE FOR COLLECTORS</p>
+                            <p class="hint">Hint: Combine all three words (no spaces, all uppercase)</p>
                             
                             <div class="input-section">
                                 <input type="text" id="act4-answer" placeholder="Enter master code" class="puzzle-input">
@@ -109,12 +109,16 @@
                     <div class="final-message" id="final-message" style="display: none;">
                         <div class="success-box">
                             <h2>🎉 CASE CLOSED SUCCESSFULLY! 🎉</h2>
-                            <p>Congratulations, Detective! You have successfully solved the case of the stolen Legendary Pokémon card.</p>
+                            <p>Congratulations, Detective! You have successfully solved the case of the stolen Pokémon card.</p>
                             <br>
                             <p><strong>SPECIAL AUTHORIZATION GRANTED:</strong></p>
-                            <p>You are now authorized to open the physical box from Soytiet.</p>
+                            <p>You are now authorized to open the physical gift box!</p>
                             <br>
                             <p>The Vietnamese Police Department thanks you for your excellent detective work.</p>
+                            <br>
+                            <div class="gift-authorization">
+                                <p>🎁 GIFT BOX UNLOCK CODE: DETECTIVE2025</p>
+                            </div>
                         </div>
                     </div>
 
@@ -127,40 +131,6 @@
         </main>
     </div>
 
-    <script>
-        function revealVideo() {
-            const container = document.getElementById('video-container');
-            if (container) {
-                container.style.display = 'block';
-                container.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-
-        function showBoxMessage() {
-            const message = document.getElementById('box-message');
-            if (message) {
-                message.style.display = 'block';
-                message.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-
-        function checkAct4Answer() {
-            const input = document.getElementById('act4-answer').value.trim().toUpperCase();
-            const result = document.getElementById('act4-result');
-            const finalMessage = document.getElementById('final-message');
-
-            const correctAnswer = "JUSTICEFORCOLLECTORS";
-
-            if (input === correctAnswer) {
-                result.style.color = "green";
-                result.textContent = "✅ Master code accepted. Unlocking final authorization...";
-                finalMessage.style.display = "block";
-                finalMessage.scrollIntoView({ behavior: 'smooth' });
-            } else {
-                result.style.color = "red";
-                result.textContent = "❌ Incorrect master code. Please try again.";
-            }
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
