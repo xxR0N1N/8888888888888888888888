@@ -31,11 +31,22 @@
                 <div class="terminal-content">
                     <div class="evidence-section">
                         <h3>SUSPECT TESTIMONY</h3>
-                        <div class="video-container">
-                            <video controls width="100%" style="max-width: 600px; border: 2px solid #00ff00; border-radius: 8px;">
-                                <source src="soytiet-testimony.mp4" type="video/mp4">
-                                Your browser does not support the video tag.
-                            </video>
+                        <div class="video-reveal-container">
+                            <div class="video-prompt" id="video-prompt">
+                                <div class="prompt-text">
+                                    <p>📹 Video testimony available</p>
+                                    <p>Click to watch Soytiet's testimony</p>
+                                </div>
+                                <button class="video-reveal-btn" onclick="revealVideo()">
+                                    ▶ PLAY TESTIMONY
+                                </button>
+                            </div>
+                            <div class="video-container" id="video-container" style="display: none;">
+                                <video controls width="100%" style="max-width: 600px; border: 2px solid #00ff00; border-radius: 8px;">
+                                    <source src="soytiet-testimony.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
                         </div>
                     </div>
 
@@ -109,3 +120,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
