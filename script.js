@@ -153,7 +153,7 @@ function checkAct3Answer() {
         // Store progress
         localStorage.setItem('act3_completed', 'true');
     } else {
-        result.textContent = "✗ INCORRECT. Format: FirstPokemon + YearOfBirth + LastDigitOfCaseNumber";
+        result.textContent = "✗ INCORRECT. Hint: ANA-PLANE ON LEFT";
         result.className = "result-message error";
     }
 }
