@@ -138,7 +138,7 @@ function checkAct3Answer() {
     if (!input || !result) return;
     
     const answer = input.value.toUpperCase().trim();
-    const correctAnswer = "BULBASAUR19901";
+    const correctAnswer = "95288361";
     
     if (answer === correctAnswer) {
         result.textContent = "✓ CORRECT! Phone unlocked. Accessing messages... Access granted to ACT 4.";
