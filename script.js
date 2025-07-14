@@ -78,7 +78,7 @@ function checkAct1Answer() {
     if (!input || !result) return;
     
     const answer = input.value.toUpperCase().trim();
-    const correctAnswer = "SOYTIET IS GUILTY OF CARD THEFT";
+    const correctAnswer = "INNOCENTPERSON";
     
     if (answer === correctAnswer) {
         result.textContent = "✓ CORRECT! Access granted to ACT 2.";
@@ -108,7 +108,7 @@ function checkAct2Answer() {
     if (!input || !result) return;
     
     const answer = input.value.toUpperCase().trim();
-    const correctAnswer = "PIKACHU";
+    const correctAnswer = "SCALPERS";
     
     if (answer === correctAnswer) {
         result.textContent = "✓ CORRECT! Security code accepted. Access granted to ACT 3.";
@@ -138,7 +138,7 @@ function checkAct3Answer() {
     if (!input || !result) return;
     
     const answer = input.value.toUpperCase().trim();
-    const correctAnswer = "BULBASAUR19901";
+    const correctAnswer = "95288361";
     
     if (answer === correctAnswer) {
         result.textContent = "✓ CORRECT! Phone unlocked. Accessing messages... Access granted to ACT 4.";
@@ -168,7 +168,7 @@ function checkAct4Answer() {
     if (!input || !result) return;
     
     const answer = input.value.toUpperCase().trim();
-    const correctAnswer = "JUSTICEPOKEMONSOLVED";
+    const correctAnswer = "JUSTICE FOR COLLECTORS";
     
     if (answer === correctAnswer) {
         result.textContent = "✓ MASTER CODE ACCEPTED! Case officially closed.";
