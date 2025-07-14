@@ -78,7 +78,7 @@ function checkAct1Answer() {
     if (!input || !result) return;
     
     const answer = input.value.toUpperCase().trim();
-    const correctAnswer = "INNOCENTPERSON";
+    const correctAnswer = "SOYTIET IS GUILTY OF CARD THEFT";
     
     if (answer === correctAnswer) {
         result.textContent = "✓ CORRECT! Access granted to ACT 2.";
@@ -108,7 +108,7 @@ function checkAct2Answer() {
     if (!input || !result) return;
     
     const answer = input.value.toUpperCase().trim();
-    const correctAnswer = "SCALPERS";
+    const correctAnswer = "PIKACHU";
     
     if (answer === correctAnswer) {
         result.textContent = "✓ CORRECT! Security code accepted. Access granted to ACT 3.";
@@ -138,7 +138,7 @@ function checkAct3Answer() {
     if (!input || !result) return;
     
     const answer = input.value.toUpperCase().trim();
-    const correctAnswer = "95288361";
+    const correctAnswer = "BULBASAUR19901";
     
     if (answer === correctAnswer) {
         result.textContent = "✓ CORRECT! Phone unlocked. Accessing messages... Access granted to ACT 4.";
@@ -153,7 +153,7 @@ function checkAct3Answer() {
         // Store progress
         localStorage.setItem('act3_completed', 'true');
     } else {
-        result.textContent = "✗ INCORRECT. Hint: ANA-PLANE ON LEFT";
+        result.textContent = "✗ INCORRECT. Format: FirstPokemon + YearOfBirth + LastDigitOfCaseNumber";
         result.className = "result-message error";
     }
 }
@@ -168,7 +168,7 @@ function checkAct4Answer() {
     if (!input || !result) return;
     
     const answer = input.value.toUpperCase().trim();
-    const correctAnswer = "JUSTICE FOR COLLECTORS";
+    const correctAnswer = "JUSTICEPOKEMONSOLVED";
     
     if (answer === correctAnswer) {
         result.textContent = "✓ MASTER CODE ACCEPTED! Case officially closed.";
@@ -245,6 +245,27 @@ document.addEventListener('keydown', function(event) {
 });
 
 // Celebration animation is now handled in CSS
+
+// Video reveal function for Act 4
+function revealVideo() {
+    const videoPrompt = document.getElementById('video-prompt');
+    const videoContainer = document.getElementById('video-container');
+    
+    if (videoPrompt && videoContainer) {
+        videoPrompt.style.display = 'none';
+        videoContainer.style.display = 'block';
+        videoContainer.scrollIntoView({ behavior: 'smooth' });
+    }
+}
+
+// Show box message after video ends
+function showBoxMessage() {
+    const boxMessage = document.getElementById('box-message');
+    if (boxMessage) {
+        boxMessage.style.display = 'block';
+        boxMessage.scrollIntoView({ behavior: 'smooth' });
+    }
+}
 
 // Debug function for development (remove in production)
 function debugUnlockAll() {
