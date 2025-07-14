@@ -168,7 +168,7 @@ function checkAct4Answer() {
     if (!input || !result) return;
     
     const answer = input.value.toUpperCase().trim();
-    const correctAnswer = "JUSTICEPOKEMONSOLVED";
+    const correctAnswer = "JUSTICE FOR COLLECTORS";
     
     if (answer === correctAnswer) {
         result.textContent = "✓ MASTER CODE ACCEPTED! Case officially closed.";
