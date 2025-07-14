@@ -60,7 +60,7 @@
                             <div class="video-prompt" id="video-prompt">
                                 <div class="prompt-text">
                                     <p>📹 Video testimony available</p>
-                                    <p>Click to watch Soytiet's testimony</p>
+                                    <p>Click to watch Soytiet's message</p>
                                 </div>
                                 <button class="video-reveal-btn" onclick="revealVideo()">
                                     ▶ PLAY TESTIMONY
@@ -68,13 +68,13 @@
                             </div>
                             <div class="video-container" id="video-container" style="display: none;">
                                 <video controls width="100%" style="max-width: 600px; border: 2px solid #00ff00; border-radius: 8px;" onended="showBoxMessage()">
-                                    <source src="soytiet-testimony.mp4" type="video/mp4">
+                                    <source src="soytiet birthday.mp4" type="video/mp4">
                                     Your browser does not support the video tag.
                                 </video>
                                 <div class="box-message" id="box-message" style="display: none;">
                                     <div class="box-prompt">
                                         <h4>🎁 SPECIAL INSTRUCTION</h4>
-                                        <p>Now that you have completed the investigation and heard Soytiet's testimony, you are authorized to:</p>
+                                        <p>Now that you have completed the investigation and heard Soytiet's message, you are authorized to:</p>
                                         <p class="box-instruction">Check and open the physical box to receive the Pokémon card that Soytiet has given you!</p>
                                         <div class="box-authorization">
                                             <p>Authorization Code: <span class="auth-code">DETECTIVE2025</span></p>
@@ -126,6 +126,24 @@
             </div>
         </main>
     </div>
+
+    <script>
+        function revealVideo() {
+            const container = document.getElementById('video-container');
+            if (container) {
+                container.style.display = 'block';
+                container.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        function showBoxMessage() {
+            const message = document.getElementById('box-message');
+            if (message) {
+                message.style.display = 'block';
+                message.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    </script>
 
     <script src="script.js"></script>
 </body>
