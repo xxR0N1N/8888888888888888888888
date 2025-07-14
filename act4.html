@@ -37,29 +37,27 @@
                             <p><strong>Verdict:</strong> GUILTY</p>
                             <br>
                             <p><strong>SUMMARY:</strong></p>
-                    
-<p>Yes, I, Soytiet, reclaimed the sacred card from the greasy hands of the Republic of Scammers. I knew they’d come. I could smell the resealed packs and HP battles from a mile away.</p>
-<br>
-<p>Did the police try to catch me? Absolutely. Did they succeed? Never. I moved like a Vietnamese spider man. Like the wind that rustles my rice paddy fields in the moonlight.</p>
-<br>
-<p>The leader of the Republic of Scalpers? Arrested. He got caught halfway through resealing base set packs. A tragedy. A triumph. An ordinary Tuesday for them.</p>
-<br>
-<p>But that’s not why you’re here.</p>
-<br>
-<p>No, you came for something greater. A message. A legacy. A piece of art so profound, so emotionally devastating, it makes the Mona Lisa look like a thumbnail.</p>
-<br>
-<p>I speak, of course, of the life-altering video that I have prepared.</p>
-<br>
-<p>I have poured my heart, soul, and possibly all of my Vietnamese aura into this performance. It is my magnum opus. My emotional Da Vinci. A masterwork that transcends language, reason, and possibly copyright law.</p>
-<br>
-<p>And the card that I stole, I have sent it over to you in the black box that you now hold. It’s not just any card. It’s a symbol of friendship, memories, and a little bit of rebellion against the scammers. Because some things are too special to let slip away.</p>
-<br>
-<p>Oh, and before you watch, happy birthday! 🎉 This onefor you.</p>
-<br>
-<p>Click the video. Watch the video. Let it change you.</p>
-<br>
-<p>This is my gift. This is ................. MY VERSION OF POKÉMON JUSTICE!
-                           
+                            <p>Yes, I, Soytiet, reclaimed the sacred card from the greasy hands of the Republic of Scammers. I knew they’d come. I could smell the resealed packs and HP battles from a mile away.</p>
+                            <br>
+                            <p>Did the police try to catch me? Absolutely. Did they succeed? Never. I moved like a Vietnamese spider man. Like the wind that rustles my rice paddy fields in the moonlight.</p>
+                            <br>
+                            <p>The leader of the Republic of Scalpers? Arrested. He got caught halfway through resealing base set packs. A tragedy. A triumph. An ordinary Tuesday for them.</p>
+                            <br>
+                            <p>But that’s not why you’re here.</p>
+                            <br>
+                            <p>No, you came for something greater. A message. A legacy. A piece of art so profound, so emotionally devastating, it makes the Mona Lisa look like a thumbnail.</p>
+                            <br>
+                            <p>I speak, of course, of the life-altering video that I have prepared.</p>
+                            <br>
+                            <p>I have poured my heart, soul, and possibly all of my Vietnamese aura into this performance. It is my magnum opus. My emotional Da Vinci. A masterwork that transcends language, reason, and possibly copyright law.</p>
+                            <br>
+                            <p>And the card that I stole, I have sent it over to you in the black box that you now hold. It’s not just any card. It’s a symbol of friendship, memories, and a little bit of rebellion against the scammers. Because some things are too special to let slip away.</p>
+                            <br>
+                            <p>Oh, and before you watch, happy birthday! 🎉 This one for you.</p>
+                            <br>
+                            <p>Click the video. Watch the video. Let it change you.</p>
+                            <br>
+                            <p>This is my gift. This is ................. MY VERSION OF POKÉMON JUSTICE!</p>
                         </div>
                     </div>
 
@@ -68,7 +66,7 @@
                         <div class="video-reveal-container">
                             <div class="video-prompt" id="video-prompt">
                                 <div class="prompt-text">
-                                    <p> Soytiet Personal Message available</p>
+                                    <p>Soytiet Personal Message available</p>
                                     <p>Click to watch Soytiet's message</p>
                                 </div>
                                 <button class="video-reveal-btn" onclick="revealVideo()">
@@ -85,9 +83,6 @@
                                         <h4>🎁 SPECIAL INSTRUCTION</h4>
                                         <p>Now that you have completed the investigation and heard Soytiet's message, you are authorized to:</p>
                                         <p class="box-instruction">Check and open the physical box to receive the Legendary Card that Soytiet has given you!</p>
-                                        <div class="box-authorization">
-                                        
-                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -120,10 +115,6 @@
                             <p>You are now authorized to open the physical box from Soytiet.</p>
                             <br>
                             <p>The Vietnamese Police Department thanks you for your excellent detective work.</p>
-                            <br>
-                            <div class="gift-authorization">
-                               
-                            </div>
                         </div>
                     </div>
 
@@ -152,8 +143,24 @@
                 message.scrollIntoView({ behavior: 'smooth' });
             }
         }
-    </script>
 
-    <script src="script.js"></script>
+        function checkAct4Answer() {
+            const input = document.getElementById('act4-answer').value.trim().toUpperCase();
+            const result = document.getElementById('act4-result');
+            const finalMessage = document.getElementById('final-message');
+
+            const correctAnswer = "JUSTICEFORCOLLECTORS";
+
+            if (input === correctAnswer) {
+                result.style.color = "green";
+                result.textContent = "✅ Master code accepted. Unlocking final authorization...";
+                finalMessage.style.display = "block";
+                finalMessage.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                result.style.color = "red";
+                result.textContent = "❌ Incorrect master code. Please try again.";
+            }
+        }
+    </script>
 </body>
 </html>
